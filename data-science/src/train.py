@@ -21,7 +21,7 @@ def parse_args():
     parser.add_argument("--train_data", type=str, help="Path to train dataset")
     parser.add_argument("--test_data", type=str, help="Path to test dataset")
     parser.add_argument("--model_output", type=str, help="Path of output model")
-    parser.add_argument('--n_estimators', type=str, default=10,
+    parser.add_argument('--n_estimators', type=int, default=10,
                         help='Number of trees in the forest')
     parser.add_argument('--max_depth', type=int, default=None,
                         help='The maximum depth of the tree. If None, then nodes are expanded until all the leaves contain less than min_samples_split samples.') 
