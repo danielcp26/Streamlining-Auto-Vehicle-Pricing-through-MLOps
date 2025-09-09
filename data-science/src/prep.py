@@ -30,7 +30,6 @@ def main(args):  # Write the function name for the main data preparation logic
     # Reading Data
     df = pd.read_csv(args.raw_data)
 
-    # ------- WRITE YOUR CODE HERE -------
 
     # Step 1: Perform label encoding to convert categorical features into numerical values for model compatibility.
     label_encoder = LabelEncoder()
@@ -53,7 +52,7 @@ if __name__ == "__main__":
     mlflow.start_run()
 
     # Parse Arguments
-    args = _______()  # Call the function to parse arguments
+    args = parse_args()  # Call the function to parse arguments
 
     lines = [
         f"Raw data path: {args.raw_data}",  # Print the raw_data path
