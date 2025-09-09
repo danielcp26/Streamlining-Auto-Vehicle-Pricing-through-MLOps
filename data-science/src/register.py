@@ -43,9 +43,9 @@ def main(args):
     # Step 4: Write model registration details, including model name and version, into a JSON file in the specified output path.  
     print("Writing JSON")
     model_info = {"id": f"{args.model_name}:{model_version}"}
-    out_file = Path(args.model_info_output_path)   
-    out_file.parent.mkdir(parents=True, exist_ok=True)
-    with open(out_file, "w") as f:
+    out_dir = Path(args.model_info_output_path)   
+    out_dir.mkdir(parents=True, exist_ok=True)
+    with open(out_dir / "model_info.json", "w") as f:
         json.dump(model_info, f)
 
 if __name__ == "__main__":
