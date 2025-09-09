@@ -2,7 +2,7 @@ $schema: https://azuremlschemas.azureedge.net/latest/pipelineJob.schema.json
 type: pipeline
 display_name: used_cars_training_pipeline  # Provide the display name for the pipeline
 experiment_name: used_cars_training  # Provide the experiment name
-description: Training Pipeline to predict cars prices using Random Forest Regressor  # Provide the description for the pipeline
+description: Training Pipeline to predict cars prices using Random Forest Regressor  # Provide the description
 
 inputs:
   raw_data:
